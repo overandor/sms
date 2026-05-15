@@ -1,0 +1,17 @@
+:root {
+  --bg: #040505;
+  --panel: #0d1110;
+  --gold: #f5c76b;
+  --text: #f5e7c8;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  background: radial-gradient(circle at top, rgba(245,199,107,.12), transparent 30%), #040505;
+  color: var(--text);
+}

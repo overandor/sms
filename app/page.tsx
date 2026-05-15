@@ -1,24 +1,46 @@
+import { VaultCard } from '@/components/VaultCard'
+import { WalletShell } from '@/components/WalletShell'
+import { ReserveRing } from '@/components/ReserveRing'
+
 export default function Home() {
   return (
-    <main style={{
-      minHeight: '100vh',
-      background: 'linear-gradient(145deg,#020303,#0a0d0c)',
-      color: '#f5e7c8',
-      display: 'flex',
-      alignItems: 'center',
-      justifyContent: 'center',
-      fontFamily: 'sans-serif'
-    }}>
-      <div style={{
-        padding: '48px',
-        borderRadius: '32px',
-        border: '1px solid rgba(245,199,107,.3)',
-        background: 'rgba(12,14,13,.92)',
-        boxShadow: '0 0 40px rgba(245,199,107,.12)'
-      }}>
-        <h1 style={{fontSize:'64px',letterSpacing:'.24em'}}>MEMBRA</h1>
-        <p>Private value movement for local economies.</p>
-      </div>
+    <main className='page'>
+      <section className='hero-panel'>
+        <div>
+          <div className='hero-panel__eyebrow'>MEMBRA MONEY</div>
+          <h1>Private value movement for local economies.</h1>
+          <p>
+            Digital bearer cash infrastructure for SMS, QR, NFC,
+            and merchant settlement.
+          </p>
+        </div>
+
+        <ReserveRing />
+      </section>
+
+      <section className='vault-grid'>
+        <VaultCard
+          title='Treasury Reserve'
+          value='$4.2M'
+          label='Assets secured'
+        />
+
+        <VaultCard
+          title='SMS Claims'
+          value='12,481'
+          label='Monthly transfers'
+        />
+
+        <VaultCard
+          title='Merchant Nodes'
+          value='284'
+          label='Local commerce grid'
+        />
+      </section>
+
+      <section className='wallet-section'>
+        <WalletShell />
+      </section>
     </main>
   )
 }

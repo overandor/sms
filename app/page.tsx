@@ -1,6 +1,9 @@
 import { VaultCard } from '@/components/VaultCard'
 import { WalletShell } from '@/components/WalletShell'
 import { ReserveRing } from '@/components/ReserveRing'
+import { SmsComposer } from '@/components/SmsComposer'
+import { CoinPack } from '@/components/CoinPack'
+import { MerchantGrid } from '@/components/MerchantGrid'
 
 export default function Home() {
   return (
@@ -38,8 +41,14 @@ export default function Home() {
         />
       </section>
 
-      <section className='wallet-section'>
+      <section className='dashboard-grid'>
         <WalletShell />
+        <CoinPack />
+      </section>
+
+      <section className='composer-grid'>
+        <SmsComposer />
+        <MerchantGrid />
       </section>
     </main>
   )

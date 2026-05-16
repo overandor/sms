@@ -1,4 +1,5 @@
 import { LiveTreasury } from '@/components/LiveTreasury'
+import { ClaimConsole } from '@/components/ClaimConsole'
 
 const cycle = [
   ['Deposit', 'Assets are secured in the MEMBRA reserve layer.'],
@@ -24,6 +25,8 @@ export default function Home() {
 
         <LiveTreasury />
       </section>
+
+      <ClaimConsole />
 
       <section className="brand-panel cycle-panel">
         <p className="eyebrow center">THE CYCLE</p>

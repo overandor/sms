@@ -20,6 +20,7 @@ export default function Home() {
           </p>
           <div className="hero-actions">
             <a href="/api/demo" className="gold-button">Open Treasury API</a>
+            <a href="/demand-accounting" className="ghost-button">Demand Accounting Demo</a>
           </div>
         </div>
 

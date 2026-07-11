@@ -1,3 +1,4 @@
+// UNIMPLEMENTED: not called by any app/ route; returns synthetic data, no external integration.
 export type TreasuryAnomaly = {
   anomalyId: string
   severity: 'low' | 'medium' | 'high' | 'critical'

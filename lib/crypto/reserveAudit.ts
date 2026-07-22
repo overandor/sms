@@ -1,3 +1,4 @@
+// UNIMPLEMENTED: not called by any app/ route; returns synthetic data, no external integration.
 import { getReserveLedger, calculateReserveRatio } from '@/lib/treasury/reserves'
 
 export type ReserveAudit = {

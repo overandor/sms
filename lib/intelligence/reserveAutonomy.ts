@@ -1,3 +1,4 @@
+// UNIMPLEMENTED: not called by any app/ route; returns synthetic data, no external integration.
 import { getSovereignReserveGrid } from '@/lib/federation/sovereignReserveGrid'
 
 export type ReserveAutonomyDecision = {
